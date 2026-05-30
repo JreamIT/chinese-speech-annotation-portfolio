@@ -1,0 +1,41 @@
+# Audio 02 Annotation
+
+## Audio Condition
+Environment: Quiet room  
+Speaking Style: Fast speed  
+Language: Mandarin Chinese  
+Audio Quality: Clear  
+
+## Human Transcript
+昨天晚上我本来打算早点睡觉，结果随手点开了一个视频，等我反应过来的时候已经快凌晨一点了。
+
+哎，最离谱的是，那个视频本来是在讲历史的，结果看着看着又推荐给我做饭啊，飙车啊，和电脑装机什么的视频。
+
+我现在越来越觉得，大模型比我自己还了解我的兴趣爱好了。
+
+## Model Transcript
+昨天晚上我本来打算早点睡结果随手点开了一个视频等我反映过来的时候已经快凌晨1点了
+最第一步的是那个视频本来是在讲地址的结果看着看着又给我推荐了做饭标车和电脑装机什么的视频
+现在我越来越觉得大不信比我自己还了解我的兴趣
+
+## Error Analysis
+
+| Error Type | Human Text | Model Text | Severity | Note |
+|---|---|---|---|---|
+| Missing Word | 睡觉 | 睡 | Low | Meaning mostly preserved |
+| Wrong Character | 反应 | 反映 | Low | Same pronunciation, different character |
+| Wrong Phrase | 最离谱的是 | 最第一步的是 | High | Phrase meaning changed |
+| Wrong Word | 历史 | 地址 | High | Topic changed |
+| Missing Filler | 啊 | omitted | Low | Natural speech marker removed |
+| Wrong Word | 飙车 | 标车 | Medium | Meaning changed |
+| Wrong Word | 大模型 | 大不信 | High | Key term misrecognized |
+| Missing Ending | 兴趣爱好了 | 兴趣 | Medium | Sentence ending incomplete |
+
+## Overall Evaluation
+Transcript Accuracy: 3.2 / 5  
+Audio Quality: 5 / 5  
+Meaning Preserved: Partially  
+
+## Notes
+The model made more errors when the speech was faster, even though the environment was still quiet. 
+Fast speech increased phrase-level errors, especially with “最离谱的是,” “历史,” and “大模型.”

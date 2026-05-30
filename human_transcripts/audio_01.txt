@@ -1,0 +1,41 @@
+# Audio 01 Annotation
+
+## Audio Condition
+Environment: Quiet room  
+Speaking Style: Normal speed  
+Language: Mandarin Chinese  
+Audio Quality: Clear  
+
+## Human Transcript
+昨天晚上我本来打算早点睡觉，结果随手点开了一个视频，等我反应过来的时候已经快凌晨一点了。
+
+哎，最离谱的是，那个视频本来是在讲历史的，结果看着看着又推荐给我做饭啊，飙车啊，和电脑装机什么的视频。
+
+我现在越来越觉得，大模型比我自己还了解我的兴趣爱好了。
+
+## Model Transcript
+昨天晚上我本来打算早点睡结果随手点开了一个视频等我反映过来的时候已经快凌晨一点了
+
+最离谱的是那个视频本来是在讲历史的结果看着看着又给我推荐了做饭啊标车啊和电脑装击什么的视频
+
+我现在越来越觉得大魔行比我自己还了解我的兴趣爱好了
+
+## Error Analysis
+
+| Error Type | Human Text | Model Text | Severity | Note |
+|---|---|---|---|---|
+| Missing Word | 睡觉 | 睡 | Low | Meaning mostly preserved |
+| Wrong Character | 反应 | 反映 | Low | Same pronunciation, different character |
+| Missing Filler | 哎 | omitted | Low | Does not affect meaning |
+| Wrong Word | 飙车 | 标车 | Medium | Meaning changed |
+| Wrong Word | 装机 | 装击 | Medium | Meaning changed |
+| Wrong Word | 大模型 | 大魔行 | High | Key term misrecognized |
+
+## Overall Evaluation
+Transcript Accuracy: 4.0 / 5  
+Audio Quality: 5 / 5  
+Meaning Preserved: Mostly yes  
+
+## Notes
+The model performed well under quiet-room conditions and normal speaking speed. 
+Most errors were homophone-related or caused by less common phrases such as “飙车,” “装机,” and “大模型.”
