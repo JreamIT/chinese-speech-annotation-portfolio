@@ -1,0 +1,6 @@
+audio_id,scenario,error_count,severity_score
+audio_01,normal_speech,6,10
+audio_02,fast_speech,8,15
+audio_03,background_noise,4,8
+audio_04,numbers,8,14
+audio_05,chinese_english_mix,10,17
