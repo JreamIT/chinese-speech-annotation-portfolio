@@ -1,0 +1,26 @@
+# Audio ## Annotation
+
+## Audio Condition
+Environment: 
+Speaking Style: 
+Language: 
+Audio Quality: 
+
+## Human Transcript
+
+
+## Model Transcript
+
+
+## Error Analysis
+
+| Error Type | Human Text | Model Text | Severity | Note |
+|---|---|---|---|---|
+
+
+## Overall Evaluation
+Transcript Accuracy: # / 5  
+Audio Quality: # / 5  
+Meaning Preserved:  
+
+## Notes

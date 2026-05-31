@@ -22,6 +22,13 @@ I recorded Mandarin audio samples, created human transcripts, generated automati
 - results/: summary tables and charts
 - scripts/: Python scripts
 
+
 ## Key Findings
 
-The ASR model performed well on clear standard Mandarin, but made more errors when the audio contained background noise, fast speech, numbers, or Chinese-English mixed terms.
+1. Fast speech produced substantially more phrase-level errors than normal speech.
+
+2. Background noise generally preserved sentence meaning but increased phrase distortion.
+
+3. Informal monetary expressions such as "二毛五" were sometimes interpreted incorrectly.
+
+4. Chinese-English code-switching was the most challenging scenario, particularly for technical terms such as "Python" and "ChatGPT".
